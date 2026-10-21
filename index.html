@@ -2,59 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>100 Reasons to Vote Abiola Olaniyi | The Paradigm Shift</title>
-<meta name="description" content="100 reasons to vote Abiola Olaniyi for UISU President. Championing a new dawn of excellence.">
-<meta property="og:title" content="100 Reasons to Vote Abiola Olaniyi for UISU President">
-<meta property="og:description" content="The Paradigm Shift. One reason at a time.">
-<meta property="og:image" content="images/og.jpg">
+<meta name="description" content="100 reasons to vote Abiola Olaniyi (001) as UI'SU President. The Paradigm Shift '27.">
+<meta property="og:title" content="100 Reasons to Vote Abiola Olaniyi for UI'SU President">
+<meta property="og:description" content="One reason at a time. Read all 100, then vote 001.">
+<meta name="theme-color" content="#060505">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="dock" aria-live="off">
-  <svg viewBox="0 0 100 100" class="clock" aria-hidden="true">
-    <circle cx="50" cy="50" r="46" class="face"/>
-    <g id="ticks"></g>
-    <line id="hand" x1="50" y1="50" x2="50" y2="14" class="hand"/>
-    <circle cx="50" cy="50" r="4" class="hub"/>
-  </svg>
-  <div class="count"><b id="cur">000</b><span>/ 100</span></div>
-</div>
-
-<header class="hero" id="top">
-  <div class="hero-in">
-    <p class="ballot">001</p>
-    <div class="search-demo" aria-hidden="true"><span id="typed"></span><i></i></div>
-    <h1>100 reasons to vote<br>Abiola Olaniyi</h1>
-    <p class="sub">The Paradigm Shift. UISU President.<br>Championing a new dawn of excellence.</p>
-    <a class="btn" href="#c1">Start the 100</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">THE PARADIGM <b>SHIFT</b> '27</div>
+    <div class="count" aria-live="polite"><span id="mini"></span><span id="cur">000</span><small>/ 100</small></div>
   </div>
-  <figure class="portrait"><img src="images/portrait.png" alt="Abiola Olaniyi" onerror="this.parentNode.classList.add('empty')"></figure>
+  <div class="tools">
+    <nav id="chips" aria-label="Chapters"></nav>
+    <input id="q" type="search" placeholder="Search the 100 (e.g. finance, welfare)" aria-label="Search reasons">
+  </div>
 </header>
 
-<nav class="chips" id="chips" aria-label="Chapters"></nav>
+<main>
+  <section class="hero">
+    <div class="hl">
+      <p class="tag">Championing a new dawn of excellence</p>
+      <h1>100<br>REASONS</h1>
+      <p class="sub">to vote <strong>Abiola Olaniyi</strong> as UI'SU President</p>
+      <div class="ask"><span id="typed"></span><i></i></div>
+      <a class="btn" href="#c1">Start the 100</a>
+      <p class="no">001 &nbsp;|&nbsp; The Paradigm Shift '27</p>
+    </div>
+    <div class="hr"><div id="big"></div><img src="assets/abiola.png" alt="Abiola Olaniyi" onerror="this.remove()"></div>
+  </section>
 
-<div class="tools">
-  <label class="sr" for="q">Search reasons</label>
-  <input id="q" type="search" placeholder="Search the 100: finance, welfare, Learning Hub" autocomplete="off">
-  <p id="found" role="status"></p>
-</div>
+  <div id="chapters"></div>
+  <p id="none" hidden>No reason matches that search. Try a shorter word.</p>
 
-<main id="list"></main>
-
-<section class="close" id="vote">
-  <p class="ballot">001</p>
-  <h2>Vote Abiola Olaniyi<br>UISU President</h2>
-  <p>That is 100 reasons. The Paradigm Shift starts with your vote.</p>
-  <div id="dates" class="dates" hidden></div>
-  <ol id="steps" class="steps" hidden></ol>
-  <a class="btn" id="shareSite" href="#">Share this page on WhatsApp</a>
-</section>
-<footer class="foot"><span class="devcredit">Built by <a href="https://linkedin.com/in/honajibola" target="_blank" rel="noopener">Ajibola Idowu-Praise</a></span></footer>
-
+  <section class="final" id="final">
+    <p class="fn">100</p>
+    <blockquote id="last"></blockquote>
+    <div class="poster">
+      <p class="pt">THE PARADIGM SHIFT</p>
+      <h2>Vote <span>Abiola Olaniyi</span><br>as the UI'SU President</h2>
+      <p class="pn">001</p>
+    </div>
+    <div class="acc">
+      <h3>Accreditation has ended</h3>
+      <p>If you got accredited, you are onboarded for the Paradigm Shift. Now go and vote 001.</p>
+    </div>
+    <a class="btn" id="shareSite" href="#">Share this page on WhatsApp</a>
+  </section>
+</main>
+<footer>The Paradigm Shift '27 &middot; Abiola Olaniyi &middot; 001
+  <p class="copy">YOUR VOTE. YOUR VOICE. YOUR UI'SU.<br><span class="devcredit">Built by <a href="https://linkedin.com/in/honajibola" target="_blank" rel="noopener">Ajibola Idowu-Praise</a></span></p>
+</footer>
 <script src="reasons.js"></script>
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
